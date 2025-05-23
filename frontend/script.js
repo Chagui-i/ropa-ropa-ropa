@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
- fetch('http://localhost:3000/api/productos')
+ fetch('https://ropa-ropa-ropa-backend.onrender.com')
  .then(response => response.json())
  .then(productos => {
  const catalogo = document.getElementById('catalogo');
@@ -27,7 +27,7 @@ function agregarAlCarrito(productoId) {
  return;
  }
 
- fetch('http://localhost:3000/api/carrito', {
+ fetch('https://ropa-ropa-ropa-backend.onrender.com', {
  method: 'POST',
  headers: { 'Content-Type': 'application/json' },
  body: JSON.stringify({ usuarioId, productoId, cantidad: 1 })

@@ -7,7 +7,9 @@ const port = 3000;
 
 const stripe = Stripe('sk_test_51RRij8RspDn1dTHMA7VmDkEFDCEaNmEcspbV76iODeIqnyGqXiN3yqrXRDTpNxaG2ST5iVzM54jtUKVWZSY8x8MH00W7e1l5Q3'); // Reemplaza con sk_test_...
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://proyecto-ropa.netlify.app'
+}));
 app.use(express.json());
 
 const productosFile = 'productos.json';
