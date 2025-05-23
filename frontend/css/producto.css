@@ -1,0 +1,10 @@
+/* Extraído de tu repositorio */
+.card {
+ max-width: 500px;
+ margin: auto;
+}
+
+.card-img-top {
+ height: 300px;
+ object-fit: cover;
+}
